@@ -23,9 +23,14 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'scrooloose/nerdtree'
 call vundle#end()
+let NERDTreeShowLineNumber=1
+let NERDTreeWinSize=25
+let g:nerdtree_tabs_open_on_console_startup=1
 let g:ycm_server_python_interpreter='/usr/bin/python'
 let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
+let g:ycm_confirm_extra_conf=0
 let mapleader=","
 nnoremap <leader>g:YcmCompleter GoToDefinitionElseDeclaration<CR>
 "nnoremap <leader>u :YcmCompleter GoToDeclaration<CR>
